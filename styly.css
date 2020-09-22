@@ -1,0 +1,27 @@
+.kontejner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.obrazek {
+  flex-basis: 100%;
+}
+
+.piskvorky {
+  background-color: #283e50;
+  color: #ffffff;
+  flex-basis: 33.33%;
+}
+.prvni {
+  background-color: #1fcca4;
+  flex-basis: 33.33%;
+}
+.druhy {
+  background-color: #0197f6;
+  flex-basis: 33.33%;
+}
+
+.body {
+  background-image: linear-gradient(#615dad, #ffc8da);
+}
