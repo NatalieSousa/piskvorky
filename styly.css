@@ -1,9 +1,12 @@
 .kontejner {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
   width: 25%;
+  margin: 0 auto;
+  color: #ffffff;
+
 }
 
 img {
@@ -17,7 +20,6 @@ h1 {
 
 .piskvorky {
   background-color: #283e50;
-  color: #ffffff;
   text-align: center;
   padding-bottom: 30px;
   padding-right: 20px;
@@ -28,8 +30,8 @@ h1 {
   background-color: #1fcca4;
   flex-basis: 33.33%; 
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin
 }
 
@@ -37,8 +39,8 @@ h1 {
   background-color: #0197f6;
   flex-basis: 33.33%;
   text-align: center;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 body {
@@ -47,25 +49,29 @@ body {
 }
 
 .rules {
-  background-color: #1fcca4;
-  color: white;
-  border-width: 0px;
-  
-}
-
-.rules:hover {
-  background-color: #1fcca4;
-  color: #1cbb96;
+  background-color: #1fcca4;  
+  border-style: none;
 }
 
 .play {
   background-color: #0197f6;
-  color: #0090e9;
-  border-width: 0px;
+  border-style: none;
 }
 
-.play:hover {
-  background-color: #0197f6;
-  color: #0090e9;
+.rules:hover,
+.rules:focus {
+background-color: #1cbb96;
 }
 
+.play:hover,
+.play:focus {
+  background-color: #0090e9;
+}
+
+a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration-line: none;
+
+
+}
