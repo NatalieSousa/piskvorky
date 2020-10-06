@@ -8,7 +8,6 @@ body {
 .kontejner {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   flex-wrap: wrap;
   width: 25%;
   margin: 0 auto;
