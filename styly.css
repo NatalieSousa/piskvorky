@@ -72,3 +72,8 @@ a {
   font-weight: bold;
   text-decoration-line: none;
 }
+
+.tabulka {
+  display: flex;
+  flex-direction: column;
+}
