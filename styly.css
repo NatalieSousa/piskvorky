@@ -136,8 +136,9 @@ svg {
 }
 
 @media screen and (min-width: 540px) {
-  .tabulka {
+  .navod {
     display: flex;
+    flex-direction: row;
   }
   .foto {
     flex: 1 1 50%;
