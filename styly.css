@@ -94,6 +94,7 @@ a {
   border-radius: 5px;
   margin-top: 30px;
   margin-bottom: 30px;
+
   
 }
 
@@ -135,12 +136,14 @@ svg {
   margin-top: 3px;
 }
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 630px) {
   .postup {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
+
   .foto {
-    flex: 1 1 50%;
+    flex-basis: calc(50% - 30px - 30px)
   }
 }
