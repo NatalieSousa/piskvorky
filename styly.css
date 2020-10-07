@@ -136,7 +136,7 @@ svg {
 }
 
 @media screen and (min-width: 540px) {
-  .navod {
+  .postup {
     display: flex;
     flex-direction: row;
   }
