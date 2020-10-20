@@ -3,6 +3,8 @@ body {
   margin: 0;
   min-height: 100vh;
   padding: 0;
+  font-family: 'Lobster', cursive;
+
 }
 
 .page {
@@ -29,9 +31,6 @@ body {
   width: 100%;
 }
 
-h1 {
-  font-family: 'Lobster', cursive;
-}
 
 .piskvorky {
   background-color: #283e50;
@@ -87,17 +86,14 @@ a {
 .tabulka {
   display: flex;
   flex-direction: column;
-  background-color:  #283e50;
+  background-color: #283e50;
   width: 50%;
   color: white;
   position: relative;
   border-radius: 5px;
   margin-top: 30px;
   margin-bottom: 30px;
-
-  
 }
-
 
 h1 {
   text-align: center;
@@ -109,16 +105,17 @@ p {
   text-align: justify;
 }
 
-div {
+/*div {
   margin-left: 30px;
   margin-right: 30px;
-}
+}*/
 
 figure {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 10px;
 }
 figcaption {
   text-align: justify;
@@ -126,7 +123,7 @@ figcaption {
 }
 
 img {
-  width: 50%;
+  width: 100%;
 }
 
 svg {
@@ -144,6 +141,36 @@ svg {
   }
 
   .foto {
-    flex-basis: calc(50% - 30px - 30px)
+    flex-basis: calc(50% - 30px - 30px);
   }
+}
+
+/* STRANA HRA */
+
+.hraci-pole {
+  max-width: 80vmin;
+}
+
+.domov {
+  background-color: #1fcca4;
+}
+
+.return {
+  background-color: #0197f6;
+}
+
+.btn {
+  height: 25px;
+  width: 25px;
+  margin: 0px;
+  padding: 0px;
+  background-color: #615dad;
+}
+
+.btn:hover {
+  background-color: whitesmoke;
+}
+
+.prvni-rada,.druha-rada, .treti-rada, .ctvrta-rada, .pata-rada, .sesta-rada, .sedma-rada, .osma-rada, .devata-rada, .desata-rada {
+  margin: 0px;
 }
