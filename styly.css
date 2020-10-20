@@ -128,7 +128,7 @@ img {
 
 
 
-svg {
+.circle, .cross {
   width: 1em;
   height: 1em;
   filter: invert(80%);
@@ -165,7 +165,8 @@ svg {
 .domov, .return {
   padding: 5px;
   border-radius: 5px;
-  margin-top: 0px;
+  color: white;
+  text-align: center;
 }
 
 .btn {
@@ -173,9 +174,9 @@ svg {
   width: 25px;
   margin: 0px;
   padding: 0px;
-  background-color:#FFE4E1;
+  background-color:#e7dddc;
   border-color: gray;
-  border-width: 2px;
+  border-width: 1px;
 }
 
 .btn:hover {
@@ -184,23 +185,26 @@ svg {
 
 .prvni-rada,.druha-rada, .treti-rada, .ctvrta-rada, .pata-rada, .sesta-rada, .sedma-rada, .osma-rada, .devata-rada, .desata-rada {
   margin: 0px;
+  display: flex;
 }
+
 
 .komplet-pole {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .horni-lista {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 293.031px;
   height: 27.667px;
   color: #ffffff;
-  margin-bottom: 10px;
-
+  margin-bottom: 20px;
+  width: 250px;
+  height: 25px;
 }
 
 h1 {
@@ -210,19 +214,20 @@ h1 {
 .levo {
   display: flex;
   flex-direction: row;
-  width: 146.5155px;
   height: 27.667px;
 }
 
 .hraje {
-  margin-right: 6px;
+  margin-right: 6px;  
 }
 
 .pravo {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  width: 146.5155px;
   height: 27.667px;
 }
 
+.kolecko {
+  filter: invert(80%);
+}
