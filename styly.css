@@ -174,3 +174,18 @@ svg {
 .prvni-rada,.druha-rada, .treti-rada, .ctvrta-rada, .pata-rada, .sesta-rada, .sedma-rada, .osma-rada, .devata-rada, .desata-rada {
   margin: 0px;
 }
+
+.komplet-pole {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.horni-lista {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 293.031px;
+  height: 27.667px;
+}
+
