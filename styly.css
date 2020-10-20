@@ -126,6 +126,8 @@ img {
   width: 100%;
 }
 
+
+
 svg {
   width: 1em;
   height: 1em;
@@ -157,7 +159,13 @@ svg {
 
 .return {
   background-color: #0197f6;
+  margin-left: 8px;
 }
+
+.domov, .return {
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 0px;
 
 .btn {
   height: 25px;
@@ -186,6 +194,32 @@ svg {
   flex-direction: row;
   justify-content: space-between;
   width: 293.031px;
+  height: 27.667px;
+  color: #ffffff;
+  margin-bottom: 10px;
+
+}
+
+h1 {
+  color: #ffffff;
+}
+
+.levo {
+  display: flex;
+  flex-direction: row;
+  width: 146.5155px;
+  height: 27.667px;
+}
+
+.hraje {
+  margin-right: 6px;
+}
+
+.pravo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 146.5155px;
   height: 27.667px;
 }
 
