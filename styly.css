@@ -166,13 +166,16 @@ svg {
   padding: 5px;
   border-radius: 5px;
   margin-top: 0px;
+}
 
 .btn {
   height: 25px;
   width: 25px;
   margin: 0px;
   padding: 0px;
-  background-color: #615dad;
+  background-color:#FFE4E1;
+  border-color: gray;
+  border-width: 2px;
 }
 
 .btn:hover {
