@@ -213,7 +213,7 @@ img {
 }
 
 h1 {
-  color: #ffffff;
+  color:#ffffff;;
 }
 
 .levo {
@@ -236,3 +236,7 @@ h1 {
 .kolecko {
   filter: invert(80%);
 }
+
+.board__field--circle {  background-image: url('circle.svg');}
+
+.board__field--cross {  background-image: url('cross.svg');}
