@@ -8,8 +8,6 @@
 
 //  když na tahu kolečko, tak v buttonu kolečko, takže informace, že potom hraje křížek, změní se proměnná na tahu ze circle na křížek
 
-console.log('Funguju!');
-
 let naTahu = 'circle';
 
 let hraje = document.querySelector("symbol");
@@ -23,7 +21,9 @@ naTahu = "cross";
 hraje.classList.add("board__field--cross");
   }
   else {
-    naTahu === "cross"
+    event.target.classList.add("board__field--cross");
+    naTahu = "circle";
+    hraje.classList.add("board__field--circle");    
   }
 };
 
