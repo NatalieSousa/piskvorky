@@ -1,34 +1,29 @@
 'use strict';
 
-//
-//-	Označit, že vždycky začíná kolečko
-//-	Říct, že kolečko a čtverečky budou na buttonech
-//-	Když hraje kolečko, tak se vypíše obrázek kolečka do butonu, ale zároveň i nahoře
-//-	Když hraje křížek, tak sevypíše křížek do butonnu, ale zároveň i nahoře
-
-//  když na tahu kolečko, tak v buttonu kolečko, takže informace, že potom hraje křížek, změní se proměnná na tahu ze circle na křížek
-
 let naTahu = 'circle';
 
-let hraje = document.querySelector("symbol");
+let hraje = document.querySelector('.symbol');
 
-const pole = document.querySelectorAll("btn");
+const pole = document.querySelectorAll('btn');
 
 const hra = (event) => {
-  if ( naTahu === 'circle') {
-    event.target.classList.add("board__field--circle");
-naTahu = "cross";
-hraje.classList.add("board__field--cross");
-  }
-  else {
-    event.target.classList.add("board__field--cross");
-    naTahu = "circle";
-    hraje.classList.add("board__field--circle");    
+  if (naTahu === 'circle') {
+    event.target.classList.add('board__field--circle');
+    event.target.disabled = true;
+    naTahu = 'cross';
+    hraje.src = 'cross.svg';
+    hraje.alt = 'krizek';
+  } else {
+    event.target.classList.add('board__field--cross');
+    event.target.disabled = true;
+    naTahu = 'circle';
+    hraje.src = 'circle.svg';
+    hraje.alt = 'kolecko';
   }
 };
 
 //cyklus - který mi zavolá funkci hra
 
 for (let i = 0; i < pole.length; i++) {
-   pole[i].addEventListener("click", hra); 
+  pole[i].addEventListener('click', hra);
 }
