@@ -4,7 +4,7 @@ let naTahu = 'circle';
 
 let hraje = document.querySelector('.symbol');
 
-const pole = document.querySelectorAll('btn');
+const pole = document.querySelectorAll('.btn');
 
 const hra = (event) => {
   if (naTahu === 'circle') {

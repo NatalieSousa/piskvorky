@@ -231,8 +231,10 @@ h1 {
 
 .board__field--circle {
   background-image: url('circle.svg');
+  background-repeat: no-repeat;
 }
 
 .board__field--cross {
   background-image: url('cross.svg');
+  background-repeat: no-repeat;
 }
