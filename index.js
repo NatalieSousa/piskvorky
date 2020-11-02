@@ -115,7 +115,10 @@ for (let i = 0; i < fields.length; i++) {
 }
 
 const kdoVyhral = (event) => {
-  if (isWinningMove === true) {
+  if (isWinner === true) {
     alert('Gratuluji, vyhrál křížek!');
-  } else alert('Gratuluji, vyhrálo kolečko!');
+  } else 
+  alert('Gratuluji, vyhrálo kolečko!');
+  
 };
+ 
