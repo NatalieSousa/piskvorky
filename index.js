@@ -111,14 +111,16 @@ const isWinningMove = (field) => {
 for (let i = 0; i < fields.length; i++) {
   fields[i].addEventListener('click', (event) => {
     const isWinner = isWinningMove(event.target);
+    if (isWinner) {
+      kdoVyhral(event.target)
+    }
   });
-}
-
-const kdoVyhral = (event) => {
-  if (isWinner === true) {
-    alert('Gratuluji, vyhrál křížek!');
-  } else 
-  alert('Gratuluji, vyhrálo kolečko!');
-  
 };
- 
+
+const kdoVyhral = (field) => {
+  if (getSymbol(field) === "cross") {
+    alert ('Gratuluji, vyhrál křížek!');
+  } else if (getSymbol(field) === "circle") {
+    alert ('Gratuluji, vyhrálo kolečko!')
+};
+}
